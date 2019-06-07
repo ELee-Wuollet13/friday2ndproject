@@ -23,13 +23,13 @@ $(document).ready(function() {
     }
     else if ($("input:radio[name=end]:checked").val() === "backend") {
       if (result >= 2){
-        $(".Go").show();
+        $(".GO").show();
       }
       else if (result < 2 && result > -2) {
         $(".Java").show();
       }
       else {
-        $(".").show();
+        $(".Rust").show();
       }
     }
     else {
