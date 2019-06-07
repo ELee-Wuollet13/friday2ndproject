@@ -1,4 +1,15 @@
-
 .hidden{
 display: none;
+}
+
+p {
+  color: #190102
+}
+
+.button {
+  color: #190102
+}
+
+.jumbotron {
+  background-color: #AAB1B5;
 }
