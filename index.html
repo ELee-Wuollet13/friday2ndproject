@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Code Selector</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
+  <meta>
+  <title></title>
 </head>
-<body>
-  <div class="container">
-    <h1>Calculator</h1>
-    <form id="calculator">
-      <div class="form-group">
-        <label for="input1">1st mumber:</label>
-        <input id="input1" class="form-control" type="text">
+<body class="container">
+  <div class="contentBox">
+    <h1>What kind of programming is right for you?</h1>
+  </div>
+  <div id="quiz">
+    <form>
+      <div class="contentBox">
+        <p>In programming and web design their are two areas in which you can operate: Frontend programming is centered on the user interface and visible parts of the website that people interact with. Backend is the functionality of the website, the things that work without being seen. Would you rather do back-end programming or front-end programming?</p>
+        <input type="radio" name="end" value="frontend"> Frontend<br>
+        <input type="radio" name="end" value="backend"> Backend<br>
       </div>
-      <div class="form-group">
-        <label for="input2">2nd number:</label>
-        <input id="input2" class="form-control" type="text">
+      <div class="contentBox">
+        <p></p>
+        <input type="radio" name="question1" value="1"> Give them a dollar<br>
+        <input type="radio" name="question1" value="0"> Politely brush them off<br>
+        <input type="radio" name="question1" value="-1"> Walk away
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="0" checked>
-          <p>add</p>
-        </label>
+      <div class="contentBox">
+        <p>A blind old lady trying to cross the road. Do you?</p>
+        <input type="radio" name="question2" value="-1"> Tell her it's clear (when it's not)<br>
+        <input type="radio" name="question2" value="1"> Help her across<br>
+        <input type="radio" name="question2" value="0"> Ask her about her day
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="1">
-          <p>subtract</p>
-        </label>
+      <div class="contentBox">
+        <p>Your friends are in an arguement who's favorite food is better. Do you?</p>
+        <input type="radio" name="question3" value="-1"> Sing something annoying until they forget their dispute<br>
+        <input type="radio" name="question3" value="0"> Butt in with your favorite food<br>
+        <input type="radio" name="question3" value="1"> Mediate fairly
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="2">
-          <p>multiply</p>
-        </label>
+      <div class="contentBox">
+        <p>Your friends are in an arguement who's favorite food is better. Do you?</p>
+        <input type="radio" name="question4" value="-1"> Sing something annoying until they forget their dispute<br>
+        <input type="radio" name="question4" value="0"> Butt in with your favorite food<br>
+        <input type="radio" name="question4" value="1"> Mediate fairly
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="3">
-          <p>divide</p>
-        </label>
+      <div class="contentBox">
+        <button type="submit" id="button">Git Match (get it?)</button>
       </div>
-      <button type="submit" class="btn">Compute</button>
     </form>
-    <div id="output">
-
+    <div class="contentBox hidden" id="match">
+      <div class="george hidden">
+        <h2>George Clooney</h2>
+        <img src="img/George_Clooney.jpg">
+        <h3>Probably one of the nicer people in Holywood, your natural kindness means you will get along Famously</h3>
+      </div>
+      <div class="jerry hidden">
+        <h2>Jerry Smith</h2>
+        <h3>Jerry is wet blanket with a tendancy towards avoiding his problems. His desperation for unearned affection makes his the ideal low maintanance partner.</h3>
+        <img src="img/Jerry.jpg">
+      </div>
+      <div class="peter hidden">
+        <h2>Peter Griffin</h2>
+        <img src="img/Peterbirdistheword.jpg">
+        <h3>Peter is self-centered and enjoys it when others fail, he may have a better nature, but he ignores it just like the needy.</h3>
+      </div>
+      <div class="charlize hidden">
+        <h2>Charlize Theron</h2>
+        <img src="img/Charlize.jpg">
+        <h3>A philanthropist, actress and accomplished martial artist, Charlize will appriciate your goodness and let you watch her back.</h3>
+      </div>
+      <div class="cruella hidden">
+        <h2>Cruella Deville</h2>
+        <img src="img/Profile_-_Cruella.png">
+        <h3></h3>
+      </div>
     </div>
   </div>
 </body>
